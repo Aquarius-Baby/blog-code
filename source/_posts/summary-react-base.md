@@ -5,8 +5,10 @@ categories:
    - summary
 tags:
    - react笔记
+top: 1
 ---
-基础：
+react基础笔记：
+<!--more-->
 - [1.获取、遍历status值](../1.获取遍历status值)
 - [2.获取、修改status的值](../2.获取修改status的值)
 - [3.事件绑定传值](../3.事件绑定传值)

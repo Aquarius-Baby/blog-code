@@ -4,7 +4,11 @@ categories:
    - 机器学习
 tags:
    - 吴恩达视频笔记
+mathjax: true
+
 ---
+
+
 #### 训练集、测试集
 在预测过程中发现存在很大的错误，我们会考虑使用以下的方法来解决
 1. 获取更多的训练样本
@@ -13,34 +17,35 @@ tags:
 4. 尝试多项式特征
 5. 增加或减少λ
 
+<!--more-->
 
 
 一个假设可能对训练样本的误差较小，但其实际上仍然不准确(因为过度拟合)。
 因此，为了评估假设，我们将给定训练样本数据集分成两组：训练集和测试集。 通常，训练集(training set)包含70％的数据，测试集(test set)包含剩余的30％。
 使用如下：
 
-```math
+$$
 1.\; learn \; \Theta \; and \; minimize \; J_{test}(\Theta) \; using \; the \; training \; set 
 
 2.\;compute \; the\;  test \; set \; error \; J_{test}(\Theta)
 
-```
+$$
 
 测试集的误差
 对于线性回归：
-```math
+$$
  J_{test}(\Theta)=\frac{1}{2m_{test}} \quad \sum_{i=1}^{m_{test}}{(h_\Theta(x_{test}^{(i)})-y_{test}^{(i)})^2}
- ```
+$$
  
 对于分类-误分类错误（又名0/1错误分类错误）
-```math
+$$
 err(h_\Theta(x),y) = \frac{1}{0}   \; if \; h_\Theta(x) > 0.5 \; and \; y = 0  \; or \;  h_\Theta(x) < 0.5 \; and \; y = 1
 
-```
+$$
 测试集的平均测试错误为：
-```math
+$$
 Test \; error =\frac{1}{m_{test}}  err(h_\Theta(x_{test}^{(i)}),y_{test}^{(i)})
- ```
+$$
  这为我们提供了错误分类的测试数据的比例。
 
 
@@ -71,7 +76,7 @@ Test \; error =\frac{1}{m_{test}}  err(h_\Theta(x_{test}^{(i)}),y_{test}^{(i)})
 然后随着d的增加它会增加，形成一个凸曲线。
 <br/>
 
-==总结：==
+总结：
 - 高偏差：训练误差，交叉验证误差都很大，且 交叉误差 约等于 训练误差 
 - 高方差：训练误差会变小，而交叉误差会很大，且 交叉误差 > 训练误差 
 
