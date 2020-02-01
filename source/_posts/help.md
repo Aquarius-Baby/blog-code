@@ -1,7 +1,7 @@
 ---
 title: Hexo 使用说明~
 date: 2020-02-01 1q:15:10
-top: true
+top: 1
 tags:
   - 使用说明
 ---
