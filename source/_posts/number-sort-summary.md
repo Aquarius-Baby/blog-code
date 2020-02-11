@@ -1,10 +1,10 @@
 ---
-title: number-sort-summary
+title: 8大基本排序算法
 date: 2020-02-10 23:42:04
 tags:
     - 排序
 categories:
-    -算法
+    - 算法
 ---
 排序算法	平均时间复杂度
 - 冒泡排序	O(n2)
